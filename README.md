@@ -54,6 +54,8 @@ _Наслідок:_ втрата потенційного прибутку.
 - Recharge statistics — статистика поповнень
 - Voice costs & duration — голосові витрати та тривалість дзвінків
 - Network action stats — мережеві події
+- Other Essential Features — використання інших сервісів (зокрема дата-трафік)  
+- SMS from Services — кількість вхідних SMS від різних сервісів  
 - Interests data — інтереси та використання сервісів
 - Previous campaigns results — участь у попередніх кампаніях
 
