@@ -62,3 +62,52 @@ Aggregates are calculated for:
 - m1 — previous month
 - m2 — second previous month
 - m3 — third month
+
+## 🚀 How to Run
+
+1. Clone the repository `git clone https://github.com/nnnnastia/ML_music_challenge.git`
+2. Open the notebook `ML_project.ipynb`
+3. Run all cells.
+
+## 📊 Model Results
+
+The following models were evaluated:
+
+| Model | ROC-AUC |
+|------|------|
+| Logistic Regression | 0.78 |
+| Decision Tree | 0.75 |
+| Gradient Boosting | **0.82** |
+
+The best performing model was **Gradient Boosting**, achieving:
+
+- Validation ROC-AUC: **0.82**
+- Stable performance across cross-validation folds
+- Mild overfitting (Train ROC-AUC: 0.86, Validation ROC-AUC: 0.82)
+
+Error analysis showed that the model correctly identifies the majority of non-adopters but misses a portion of potential adopters due to strong class imbalance.
+
+## 🔍 Model Insights
+
+Feature importance analysis revealed that the most influential predictors include:
+
+- `lt`
+- `content_count_m1`
+- `balance_sum`
+- `income_brnd_cont_m1`
+
+These features reflect subscriber engagement and financial behavior, which play a key role in predicting Vodafone Music adoption.
+
+## 🚀 Possible Improvements
+
+Several improvements could further increase model performance:
+
+- threshold tuning to increase recall for the positive class;
+- class balancing techniques;
+- using more advanced models such as XGBoost or LightGBM;
+- feature engineering based on subscriber behavioral patterns.
+
+## 🧑‍💻 Author
+
+Anastasiia Tkachenko  
+Machine Learning / Data Science Enthusiast
